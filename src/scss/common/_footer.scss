@@ -1,0 +1,221 @@
+.footer {
+  width: 100%;
+  color: $black;
+  background-color: $peach;
+
+  .footer_wrapper {
+    width: 100%;
+    padding: 3rem 0;
+    @include flexGrid(space-between, flex-start);
+
+    >div {
+      height: auto;
+      margin: 0 1rem;
+      min-height: 17em;
+      width: calc(100% / 3);
+      flex-direction: column;
+      @include flexGrid(space-between, flex-start);
+    }
+  }
+
+  ul {
+    font-weight: 900;
+    font-size: 1.25rem;
+
+    li {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 0.5rem 0;
+      list-style-type: none;
+    }
+  }
+
+  .footer_contact,.footer_contact-1 {
+    ul {
+      li {
+        position: relative;
+        padding-left: 26px;
+
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+
+        &:first-child {
+          line-height: 1.7;
+
+          &:before {
+            content: url("/imgs/icons/location.png");
+          }
+        }
+
+        &:nth-child(2) {
+          &:before {
+            content: url("/imgs/icons/telephone.png");
+          }
+        }
+
+        &:nth-child(3) {
+
+          top: 10px;
+
+          &:before {
+            content: url("/imgs/icons/email.png");
+          }
+        }
+      }
+    }
+
+  }
+  
+
+  .footer_sched {
+    ul li {
+      span:first-of-type {
+        min-width: 6rem;
+        display: inline-block;
+      }
+
+      span:nth-child(2) {
+        padding-right: 1rem;
+      }
+    }
+
+    .footer_logo {
+      height: 6rem;
+    }
+  }
+
+  .footer-logo-social {
+    display: none !important;
+  }
+
+  .footer_map {
+    margin: 1rem 0;
+    height: 17em !important;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  img.social_media {
+    padding-right: 1.2rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    // .footer_wrapper {
+    //   align-items: center;
+    //   flex-direction: column;
+    //   justify-content: center;
+
+    //   >div {
+    //     width: 100%;
+
+    //     &:not(:last-child) {
+    //       padding-bottom: 2em;
+    //       border-bottom: 1px dashed darken($peach, 10%);
+    //     }
+
+    //     &:not(:first-child) {
+    //       padding-top: 2em;
+    //     }
+    //   }
+
+    //   .footer_map {
+    //     margin: 1rem 0;
+
+    //     img {}
+    //   }
+    // }
+    .footer_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      .footer_contact-1{
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+      >div {
+        width: 100%;
+
+        &:not(:last-child) {
+          padding-bottom: 2em;
+          border-bottom: 1px dashed darken($peach, 10%);
+        }
+
+        &:not(:first-child) {
+          padding-top: 2em;
+        }
+      }
+
+      .footer-logo-social {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        justify-content: start;
+      }
+
+      .footer_social,
+      .footer_logo {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer .footer_wrapper>div:not(:first-child) {
+    padding-top: 0em;
+  }
+  .footer .footer_wrapper > div:not(:last-child) {
+    padding-bottom: 2em;
+    border-bottom: none!important;
+  }
+}
+
+@media (max-width:768px) and (min-width:591px) {
+  .footer-logo-social {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    justify-content: end;
+  }
+
+  .mr {
+    margin-right: 2rem;
+  }
+
+  .footer_social,
+  .footer_logo {
+    display: none;
+  }
+
+
+}
+
+@media (max-width:590px) {
+  .footer_wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .footer_contact-1{
+    grid-row: auto!important;
+    grid-column: auto!important;
+  }
+  .footer .footer_wrapper>div {
+    min-height: 0em !important;
+  }
+  
+}
+@media only screen and (max-width: 590px) {
+  .footer .footer_wrapper > div:not(:last-child) {
+    border-bottom: 1px dashed #f4c79c!important;
+  }
+}

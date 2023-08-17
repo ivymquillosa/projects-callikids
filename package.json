@@ -1,0 +1,62 @@
+{
+  "name": "express-template",
+  "version": "3.0.5",
+  "description": "{dna:micro}",
+  "main": "app.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm start\" \"gulp\"",
+    "start": "nodemon index",
+    "gulp": "gulp",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.dnamicro.net:uiux/express-boilerplate-v2.git"
+  },
+  "author": "{dna:micro}",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.15.4",
+    "express-session": "^1.15.6",
+    "express-static-gzip": "^2.0.6",
+    "fs-extra": "^7.0.1",
+    "gulp": "^3.9.1",
+    "morgan": "^1.10.0",
+    "nconf": "^0.7.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.6",
+    "pug": "^2.0.0-rc.3",
+    "restify": "^8.5.1",
+    "restify-cors-middleware": "^1.1.1",
+    "sendgrid": "^4.7.1",
+    "serve-static": "^1.14.1",
+    "winston": "^2.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.6",
+    "@babel/preset-env": "7.1.6",
+    "autoprefixer": "7.2.1",
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.1",
+    "cssnano": "3.10.0",
+    "gulp-babel": "8.0.0",
+    "gulp-clean-css": "4.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-minify": "3.1.0",
+    "gulp-nodemon": "2.2.1",
+    "gulp-order": "1.1.1",
+    "gulp-postcss": "7.0.0",
+    "gulp-sass": "3.1.0",
+    "gulp-uglify": "3.0.1",
+    "gulp-uglify-es": "1.0.4",
+    "gulp-util": "3.0.8",
+    "postcss-cli": "4.1.0",
+    "postcss-cssnext": "3.0.2",
+    "uglify-es": "3.3.9"
+  }
+}

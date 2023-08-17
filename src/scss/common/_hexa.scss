@@ -1,0 +1,103 @@
+@import "../utils/vars.scss";
+.row {
+  display: flex;
+  margin-top: -1rem;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+.hex {
+  width: 208px;
+  height: 120px;
+  margin-top: 70px;
+  position: relative;
+  background: $color_secondary;
+
+  &:before {
+    content: "";
+    top: -59px;
+    position: absolute;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    border-bottom: 60px solid $color_secondary;
+  }
+  &:after {
+    content: "";
+    bottom: -59px;
+    position: absolute;
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    border-top: 60px solid $color_secondary;
+  }
+
+  // .hex.hex--inner
+  &--inner {
+    z-index: 1;
+    margin-top: -4.3rem;
+    transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95);
+    background-color: $color_background;
+
+    &:before {
+      border-bottom: 60px solid $color_background;
+    }
+    &:after {
+      border-top: 60px solid $color_background;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  // .hex.hex--base
+  &--base {
+    z-index: 2;
+    transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95);
+    background-color: $color_secondary;
+
+    &:before {
+      border-bottom: 60px solid $color_secondary;
+    }
+    &:after {
+      border-top: 60px solid $color_secondary;
+    }
+  }
+  &:nth-of-type(5),
+  &:nth-of-type(6),
+  &:nth-of-type(7) {
+    margin-top: 54px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .hex--inner {
+      background-color: $color-primary;
+
+      &:before {
+        border-bottom: 60px solid $color-primary;
+      }
+      &:after {
+        border-top: 60px solid $color-primary;
+      }
+    }
+  }
+}
+
+.hex_text {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: $text_white;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+}
+

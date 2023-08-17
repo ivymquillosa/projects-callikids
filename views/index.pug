@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    .hex_container
+        .content
+            h1 Express-PUG Boilerplate
+            .sub_title Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione officiis vitae blanditiis fuga. Quas dignissimos, iste quos deleniti nulla dicta nesciunt laudantium vel dolorum voluptas sapiente ipsa doloribus eos.
+        .row
+            for d in data
+                .hex
+                    a(href=`${d.path}`)
+                        .hex.hex--inner
+                            .hex.hex--base
+                                img.icon(src=`${d.src_path}`, alt=`${d.hex_name} icon`) 
+                                .hex_text=d.hex_name
+    
+        
+

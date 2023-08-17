@@ -1,0 +1,47 @@
+.pop_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, .7);
+    z-index: 1123;
+    height: 100%;
+    padding: 20px;
+    display: none;
+
+    .pop_modal_dialog{
+        margin: 16rem auto 20px;
+        text-align: center;
+        position: relative;
+        max-width: 872px;
+        
+        
+        .close_modal{
+            position: absolute;
+            top: -21px;
+            right: -13px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+
+            @media (max-width: 768px) {
+                top: -14px;
+                right: -10px;
+                width: 50px;
+                height: 50px;
+            }  
+            
+        }
+    img {
+        
+        
+        @media (max-width: 768px) {
+            width: 100%;
+        }  
+
+        @media (max-width: 425px) {
+            width: 100%;
+        }      
+        }
+    }
+}

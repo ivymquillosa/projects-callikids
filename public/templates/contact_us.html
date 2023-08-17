@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="contact_us" lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Contact Us</title>
+      <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+      <link rel="icon" href="imgs/icons/favicon.png" type="image/gif"/>
+      <meta name="description" content="Express-PUG Boilerplate"/>
+      <meta property="og:title" content="California Kids Pediatrics"/>
+      <meta property="og:site_name" content="California Kids Pediatrics"/>
+      <meta property="og:description" content="California Kids Pediatrics"/>
+      <meta property="og:image" content="/images/logo.png"/>
+      <meta property="og:url" content="/images/logo.png"/>
+      <meta property="twitter:title" content="California Kids Pediatrics"/>
+      <meta property="twitter:description" content="California Kids Pediatrics"/>
+      <meta property="twitter:image" content="/images/logo.png"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   </head>
+   <body>
+      <header class="header">
+         <nav class="container nav">
+            <div class="header_wrapper">
+               <a class="nav_logo_link" href="/"><img class="nav_logo" src="/imgs/icons/logo.svg" alt="California Kids Pediatrics"/></a>
+               <div class="nav_toggle" id="menuToggle">
+                  <!-- <input type="checkbox"/><a class="nav_burger"></a> -->
+                  <div class="nav_menu"><a class="nav_menu--item" href="/">Home</a><a class="nav_menu--item" href="/services">Services</a><a class="nav_menu--item" href="/meet-our-team">Meet Our Team</a><a class="nav_menu--item" href="/resources">Resources</a><a class="nav_menu--item active" href="/contact-us">Contact Us</a></div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="main_content">
+         <div class="section section--1">
+            <div class="container">
+               <div class="section_wrapper contact">
+                  <div class="contact-form">
+                     <h2 class="section_title">Contact Us</h2>
+                     <h3 class="section_subtitle">Do you have any questions about your baby’s health? Or would you like to schedule an appointment for you or for your baby? Just fill out the form
+                        below and we’ll set a date for your visit.
+                     </h3>
+                     <div class="contact-fields">
+                        <form method="post" action="/contact-us" venctype="text/plain" >
+                           <input name="first_name" type="text" placeholder="First Name *" value="" required="required"/><input name="last_name" type="text" placeholder="Last Name *" value="" required="required"/><input name="email_address" type="email" placeholder="Email Address *" value="" required="required"/><input name="phone_number" id="phone_number" type="number" placeholder="Phone Number *" minlength="14" maxlength="14" value="" required="required"/>
+                           <h3 class="section_details--title">Purpose of Appointment:</h3>
+                           <select name="purpose" id="purpose">
+                              <option value="Well Child Visit">Well Child Visit</option>
+                              <option value="Same-Day Sick Visits">Same-Day Sick Visits</option>
+                              <option value="Sports Physical Evaluations">Sports Physical Evaluations</option>
+                              <option value="Laboratory Test">Laboratory Test</option>
+                              <option value="ADHD Evaluation">ADHD Evaluation</option>
+                              <option value="Frenotomies">Frenotomies</option>
+                              <option value="Wart Removal">Wart Removal</option>
+                              <option value="Ear Piercing">Ear Piercing</option>
+                              <option value="Urine Catheterization">Urine Catheterization</option>
+                              <option value="COVID-19 Test">COVID-19 Test</option>
+                              <option value="Vaccination">Vaccination</option>
+                           </select>
+                           <h3 class="section_details--title">Message</h3>
+                           <textarea resize="none"></textarea>
+                           <button class="btn">SUBMIT</button>
+                        </form>
+                     </div>
+                     <div class="contact-info">
+                        <div class="info"><img src="/imgs/contact_us/phone-call.png" alt=""/><span>424-277-2020</span></div>
+                        <div class="info"><img src="/imgs/contact_us/email.png" alt=""/><a href="mailto:Contact@CalKidsPeds.com">Contact@CalKidsPeds.com</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer_wrapper">
+               <div class="footer_sched">
+                  <ul>
+                     Hours of Operation 
+                     <li><span>Monday </span><span>:</span>9:00AM - 5:00PM</li>
+                     <li> <span>Tuesday</span><span>:</span>9:00AM - 5:00PM</li>
+                     <li> <span>Wednesday</span><span>:</span>9:00AM - 5:00PM</li>
+                     <li> <span>Thursday</span><span>:</span>9:00AM - 5:00PM</li>
+                     <li> <span>Friday</span><span>:</span>9:00AM - 5:00PM</li>
+                     <li>A doctor is on-call 24/7/365 days a year.</li>
+                  </ul>
+                  <img class="footer_logo" src="/imgs/icons/logo.svg" alt="California Kids Pediatrics"/>
+               </div>
+               <div class="footer_contact">
+                  <ul>
+                     California Kids Pediatrics
+                     <li>2990 S. Sepulveda Blvd., Suite 202</li>
+                     <li>Los Angeles, CA 90064</li>
+                     <li>T. 424-277-2020 | F. 310-388-1104</li>
+                     <li>Contact@CalKidsPeds.com</li>
+                  </ul>
+                  <div class="footer_social"><a href="https://www.facebook.com/CaliforniaKidsPediatrics" rel="noopener" target="_blank"><img class="social_media" src="/imgs/icons/facebook-icon.svg" alt="Facebook"/></a><a href="https://twitter.com/kidspediatricca?lang=en" rel="noopener" target="_blank"><img class="social_media" src="/imgs/icons/twitter-icon.svg" alt="Twitter"/></a></div>
+               </div>
+               <div class="footer_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.625639889142!2d-118.4307679853071!3d34.027819080612616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbae1ac1f6bf%3A0xfdf036a12f8a4832!2sCalifornia%20Kids%20Pediatrics%20-%20Dr.%20Leila%20Bozorgnia!5e0!3m2!1sen!2sph!4v1609277430869!5m2!1sen!2sph"></iframe></div>
+            </div>
+         </div>
+      </footer>
+      <script src="/js/autoplay.js"></script>
+   </body>
+</html>

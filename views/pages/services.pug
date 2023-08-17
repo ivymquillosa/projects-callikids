@@ -1,0 +1,132 @@
+extends ../layout
+
+block content
+    .hero_section
+        h1 Services
+    section.section.section--1
+        .container
+            .section_wrapper.baby
+                .section_image
+                    .section_image.left
+                        img(src="/imgs/services/Well_Child_Visit_Services.png", alt="A baby boy smiles sitting on a desk while a pediatrician is checking his temperature using a non-contact digital-thermometer")
+                .section_details.rsection 
+                    h2.section_title.left Well Child Visits
+                    p.section_description These visits allow you and your doctor to monitor the progress of your child as they advance
+                        |  from a newborn to a healthy teenager. You and your doctor will be able to see how your child has developed since their last visit. Your child gets their scheduled immunizations at the right
+                        |  stages to help prevent illness. Nutrition is discussed as a key element of preventive care, along with hearing and vision checks. Preventive care will help your child develop into a healthy,
+                        |  happy adult.
+
+            .section_wrapper.baby.reverse
+                .section_details
+                    h2.section_title.left Same-Day Sick Visits
+                    p.section_description We make every effort to schedule appointments for sick children on the same day you call. Please call in the morning if you would like a same-day sick visit. When calling us to schedule your
+                        |  appointment, please provide us with all of your concerns so that we may triage the appointment appropriately. All visits are by appointment only. Please no walk-ins.
+
+                .section_image.centered
+                    img(src="/imgs/services/Sameday_Sick_Visits_Services.png", alt="An experienced female pediatrician gives flu shots to a toddler cradled by her mother during a same-day sick appointment. ")
+            .section_wrapper.baby
+                .section_image
+                    .section_image.left
+                        img(src="/imgs/services/Prenatal_Services.png", alt="An expectant mother shows off her baby bump after the prenatal visit.")
+                .section_details.rsection 
+                    h2.section_title.left Prenatal & Newborn Info
+                    p.section_description California Kids Pediatrics offers complimentary prenatal appointments with our pediatricians.
+                        |  Expectant parents can discuss any questions or concerns they may have about their soon-to-arrive family member at our office. A prenatal visit will give expecting parents and their
+                        |  pediatrician an opportunity to get to know each other. It’s a good idea to schedule your prenatal visit 2-3 months before your due date.
+                        br
+                    p.section_description.
+                        To schedule a prenatal visit, call either of our locations: West LA at <b>424-277-2020</b> or South Bay at <b>424-322-9866</b>.
+
+    .section.section--2
+        .container
+            .section_wrapper.services
+                h2.section_title Specialty Services
+                .section_details
+                    .services--item
+                        img(src='/imgs/services/sports-physical-evaluations.svg' alt="Running man icon representing sports physical evaluation")
+                        span Sports Physical Evaluations
+                    .services--item
+                        img(src='/imgs/services/pre-operative-evaluations.svg' alt='Surgical scissors and scalpel icons representing pre-operative tools')
+                        span Pre-operative Evaluations
+                    .services--item
+                        img(src='/imgs/services/adhd-evaluation.svg' alt='Animated representation of an active brain relating to ADHD evaluation')
+                        span ADHD Evaluation
+                    .services--item
+                        img(src='/imgs/services/freetongue.png' alt='Icon of a mouth with a tongue out representing frenotomy examination')
+                        span Frenotomies
+                    .services--item
+                        img(src='/imgs/services/wart-removal.svg' alt='Right hand with the index finger pointing up examined for wart removal')
+                        span Wart Removal
+                    .services--item
+                        img(src='/imgs/services/ear-piercing.svg' alt='Icon of an ear with three piercings ')
+                        span Ear Piercing
+                    .services--item
+                        img(src='/imgs/services/urine-catheterization.svg' alt='Catheter pouch used for a catheterization procedure')
+                        span Urine Catheterization
+                    .services--item
+                        img(src='/imgs/services/laboratory-test.svg' alt='Animated representation of a beaker, Erlenmeyer flask, and volumetric flask')
+                        span Laboratory Test 
+                    .services--item
+    .section.section--4
+        .container
+            .section_wrapper
+                h2.section_title Vaccinations
+                .section_details.centered
+                    p.section_description California Kids Pediatrics strongly recommends following the routine schedule and guidelines approved by the Centers for Disease Control and Prevention (CDC) and the American Academy of Pediatrics (AAP). Countless
+                        |  studies have shown that vaccines are safe, effective, and play a vital role in protecting the health of the individual patient and the community.
+                    a(href="/vaccine-information-sheet").btn See Vaccine Information Sheet
+
+    section.section.section--3#child-visits
+        .container
+            .section_wrapper.baby
+                .section_details
+                    h2.section_title.left The Importance of Well Child Visits
+                    p.section_description In a baby’s first year, every month brings changes. During well-baby visits, our pediatricians will check for proper growth and development and answer your questions about eating,
+                        |  sleeping, and vaccinations.
+                    p.section_description Our doctors check your baby’s weight, length, and head circumference at each visit to ensure they’re gaining a healthy amount of weight and growing as expected.
+                        |  <br>At each appointment, you will learn if your child is meeting the developmental milestones established by the American Academy of Pediatrics.
+                .section_image.centered
+                    img(src="/imgs/services/Importance_Services.png", alt="Mother wearing a lavender blouse carries her baby in her arms.")
+
+    .section.section--5#baby-first-ediatrician
+        .container
+            .section_wrapper
+                h2.section_title When Should My Baby First See a Pediatrician
+                .section_details.centered
+                    p.section_description The first visit is typically 2-3 days after bringing the baby home from the hospital unless otherwise directed by your pediatrician. Then follow up visits
+                        |  as needed until the baby reaches birth weight.
+                    p.section_description After that, preventative well visits should occur at the following ages:
+                    .list
+                        ul.section_details--list
+                            li 1 month
+                            li 2 months (vaccines)
+                            li 4 months (vaccines)
+                            li 6 months (vaccines)
+                            li 9 months
+                        ul.section_details--list
+                            li 1 year (vaccines)
+                            li 15 months (vaccines)
+                            li 18 months (vaccines)
+                            li 2 years
+                            li 2 ½ years
+                        ul.section_details--list
+                            li 3 years
+                            li 4 years (vaccines)
+                            li Annually thereafter
+                    //- h3.section_details--title Important note for parents:
+                    //- p It is extremely important that you add your new baby to your health insurance policy once your baby is born.
+                    //-     |  Most insurance plans have a 30-day grace period for newborns to be added. Once the grace period has expired, if the baby has not been added, the
+                    //-     | parent will be responsible for charges incurred.
+        
+
+    .section.section--7#insurance-info
+        .container
+            .section_details.centered
+                h2.section_title.insurance Insurance Info
+                p We are contracted with most PPO insurances: Anthem Blue Cross, Blue Shield, United Health Care, Aetna, Cigna, and Health Net. We will also accept some Oscar Insurance plans beginning in January 2021.
+                p Please note that we are not “In-Network” with every single plan offered by these insurance companies. We recommend to always call your insurance company to confirm that we are in-network.
+                p HMO Insurances we are contracted with: Cedar Sinai Health Associates, and Regal Medical Group. We are contracted with some Medi-Cal plans as well. <br>Please call for details.
+                p We keep credit cards on file for your family. Your on-file credit card will only be charged if your account is delinquent for more than 60 days.
+                p Important note for parents of newborns:
+                    | <br> It is extremely important that you add your new baby to your health insurance policy once your baby is born. Most insurance plans have a 30-day grace period for newborns to be added. Once the grace period has expired, if the baby has not been added, the parent will be responsible for charges incurred.
+                //- p Feel free to call us at <b> 424-277-2020</b> or email us at <b>Contact@CalKidsPeds.com </b>to schedule an appointment or ask any questions.

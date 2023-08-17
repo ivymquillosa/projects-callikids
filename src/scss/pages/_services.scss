@@ -1,0 +1,354 @@
+.services .hero_section {
+    color: $black;
+    background-color: $yellow;
+    background-image: url('/imgs/services/Services_Header.png');
+}
+
+
+
+.services .section {
+    // .section--1
+    &--1 {
+        color: $black;
+        background: #EBF7F7;
+        // background: #EBB32B;
+
+        @media (max-width: 768px) {
+            padding: 3em 0rem 0rem;
+        }
+
+        @media (max-width: 425px) {
+            padding: 3em 0rem 0rem;
+        }
+
+        .section_wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                justify-content: center;
+
+                &.reverse{
+                    flex-flow: column-reverse;
+                }
+                
+                &:not(:last-child) {
+                    margin-bottom: 3em;
+                }
+
+                :last-child {
+                    .section_image {
+                        margin-top: 3.5em;
+                    }
+                }
+            }
+        }
+
+        .section_details {
+            width: 80%;
+            flex-direction: column;
+            margin-left: 2rem;
+
+            @include flexGrid(center, flex-start);
+
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0rem;
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+                align-items: center;
+                padding-bottom: 2em;
+            }
+
+            @media (max-width: 500px) {
+                align-items: center;
+                padding-bottom: 2em;
+            }
+        }
+
+        .section_title {
+            width: 460px;
+
+            @media (max-width: 1440px) {
+                width: auto;
+                padding-right: 1em;
+            }
+
+            @media (max-width: 1024px) {
+                padding-right: 0;
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+
+            }
+            @media (max-width: 425px) {
+                text-align: center !important;
+                width: 101%;
+
+            }
+        }
+
+        .section_description {
+            width: 700px;
+
+            @media (max-width: 1440px) {
+                width: auto;
+                padding-right: 2em;
+            }
+
+            @media (max-width: 1024px) {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+
+            @media (max-width: 768px) {
+                text-align: center;
+
+            }
+            @media (max-width: 425px) {
+                text-align: center !important;
+
+            }
+        }
+    }
+
+
+    // .section--2
+    &--2 {
+        color: $black;
+        background-color: $white;
+
+        .section_details {
+            width: 100%;
+            padding-left: 5em;
+            flex-basis: 350px;
+            flex-wrap: wrap;
+            @include flexGrid(center, center);
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                padding-left: 3em;
+            }
+
+            @media (max-width: 500px) {
+                padding-left: 0;
+                flex-basis: 100%;
+                align-items: center;
+            }
+        }
+
+        .services--item {
+            flex-shrink: 0;
+            width: 350px;
+            padding: 1.5em 0;
+            @include flexGrid(flex-start, center);
+
+            span {
+                padding-left: 2em;
+            }
+
+            @media (max-width: 1024px) {
+                &:last-child {
+                    display: none;
+                }
+            }
+
+            @media (max-width: 500px) {
+               width: 80%;
+            }
+        }
+    }
+
+    // .section--3
+    &--3 {
+        color: $black;
+        background: #ffffff;
+        // background: #EBB32B;
+        
+
+        .section_wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                justify-content: center;
+                flex-direction: column-reverse;
+                &:not(:last-child) {
+                    margin-bottom: 3em;
+                }
+
+                :last-child {
+                    .section_image {
+                        margin-top: 3.5em;
+                    }
+                }
+            }
+        }
+
+        .section_details {
+            width: 80%;
+            flex-direction: column;
+            @include flexGrid(center, flex-start);
+
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+
+        .section_title {
+            width: 460px;
+
+            @media (max-width: 1440px) {
+                width: auto;
+                padding-right: 1em;
+            }
+
+            @media (max-width: 1024px) {
+                padding-right: 0;
+                text-align: center !important;
+            }
+        }
+
+        .section_description {
+            width: 700px;
+
+            @media (max-width: 1440px) {
+                width: auto;
+                padding-right: 2em;
+            }
+
+            @media (max-width: 1024px) {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+
+        }
+    }
+    // .section--4
+    &--4 {
+        color: $black;
+        background-color: #ebf7f7;
+
+        p {
+            width: 80%;
+            // margin-bottom: 5em;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+    }
+
+    // .section--5
+    &--5 {
+        color: $white;
+        background-color: $dark_blue;
+
+        p {
+            width: 80%;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+
+        .section_wrapper:not(:first-child) {
+            .section_title {
+                margin-top: 1em;
+            }
+        }
+
+        .list {
+            width: 80%;
+            padding: 2em 0;
+            padding-left: 10em;
+            flex-wrap: wrap;
+            @include flexGrid(center, flex-start);
+
+            ul {
+                width: calc(100% / 3);
+
+                li:before {
+                    background-color: $white;
+                }
+
+                @media (max-width: 768px) {
+                    width: 200px;
+                    
+                 }
+            }
+
+            @media (max-width: 1160px) {
+                width: 100%;
+             }
+
+             @media (max-width: 1000px) {
+                padding-left: 5em;
+             }
+
+             @media (max-width: 850px) {
+                padding-left: 3em;
+             }
+
+             @media (max-width: 768px) {
+                // width: 80%;
+                // flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+             }
+        }
+    }
+
+    &--6 {
+        background-image: url('/imgs/services/Insurance_Services.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #ffffff;
+    .section_wrapper {
+        
+        color: #000000;
+        }
+    .info {
+        color:#000000;
+    }
+    .section_details.centered.info {
+        background-color: #ffffff;
+    }
+    }
+}
+
+
+// ======================
+//        UPDATE
+// ======================
+
+img.service_icon {
+    width: 70% !important;
+}
+
+.section_wrapper.services {
+    display: block;
+    /* padding: 1rem; */
+}
+
+.services .section--5 .list {
+    padding-bottom: 0;
+  }

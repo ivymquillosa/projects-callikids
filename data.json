@@ -1,0 +1,17 @@
+[
+    {
+        "hex_name":"Home",
+        "menu_home": "active",
+        "path": "/"
+    },
+    {
+        "hex_name":"Services",
+        "menu_services": "active",
+        "path": "/services"
+    },
+    {
+        "hex_name":"Meet the Team",
+        "menu_team": "active",
+        "path": "/meet-the-team"
+    }
+]

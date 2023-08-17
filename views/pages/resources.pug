@@ -1,0 +1,123 @@
+extends ../layout
+
+block content
+    .hero_section
+        h1 Resources
+    .section.section.section--1
+        .container
+            .section_wrapper.baby
+                .section_image
+                    .section_image.left
+                        img(src="imgs/resources/Dosage_Chart_Resources.png", alt="Doctor wearing a white coat and a stethoscope checks a patient’s dosage chart.")
+                        //- video#video1(autoplay loop='true' playsinline controls='false' muted="muted")
+                            //- source(src='/imgs/icons/clinic_visit.webm' type='video/mp4')
+                            //- source(src='/imgs/icons/clinic_visit.mp4' type='video/mp4')
+                .section_details.rsection 
+                    h2.section_title.left Dosage Chart
+                    p.section_description Acetaminophen and Ibuprofen
+                    p.section_description Use this table to help correctly dose your child's Tylenol/Ibuprofen. Do not give Tylenol to
+                        |  children under 3 months of age without first consulting your doctor. Do not use ibuprofen
+                        |  before the age of 6 months.
+
+                    a(href="/dosage-chart").btn See Dosage Chart
+
+            .section_wrapper.baby.reverse
+                .section_details
+                    h2.section_title.left Poison Control
+                    p.section_description If your child has ingested anything that you are concerned may be dangerous (e.g., medications, household products, etc.), call poison control immediately and follow the
+                        |  hotline’s advice prior to contacting your physician at <b>1-800-222-1222.</b>
+                    p.section_description The Poison Control Hotline can give you the most complete, accurate, and immediate advice for almost any ingestion. It is critical to call the hotline immediately upon
+                        |  discovering a potentially harmful ingestion even if your child seems well.
+
+                    a(href="https://poisonhelp.hrsa.gov/" target='_blank').btn Learn More About Poisoning
+
+                .section_image.centered
+                    img(src="imgs/resources/Poison Control_Resources.png", alt="Doctor wearing gloves holds syringe.")
+    .section.section--2
+        .container
+            .section_wrapper
+                h2.section_title Vaccine and Milestone Information
+                p.section_description.centered Get the best information about recommended vaccinations for your infants and children today.
+            .section_wrapper
+                .section_details
+                    .section_image
+                        img(src="/imgs/resources/baby-boy.png" alt="A baby boy's head peach fuzz.")
+                    p Birth to 6 Years
+                    a(href="/vaccine-information-birth-to-six-years").btn  Learn More
+                .section_details
+                    .section_image
+                        img(src="/imgs/resources/teenager.png" alt="Animated head of a teenager.")
+                    p Birth to 18 Years
+                    a(href="/vaccine-information-birth-to-eighteen-years").btn  Learn More
+                .section_details
+                    .section_image
+                        img(src="/imgs/resources/milestone.png" alt="Lightbulb with a flag on its center.")
+                    p Baby Milestone Check
+                    a(href="/vaccine-information-mile-stone-check").btn  Learn More
+            .section_wrapper
+                h2.section_title Useful Links
+                p.section_description.centered Know the most useful information about you and your baby’s health. The following links will take you to sites that will help you understand your
+                    |  baby’s health and nutrition so they can grow healthy and strong.
+                .links
+                    a(href='https://www.aap.org/' rel='noopener' target='_blank') https://www.aap.org/
+                    a(href='https://www.healthychildren.org/' rel='noopener' target='_blank') https://www.healthychildren.org/
+                    a(href='https://kidshealth.org/' rel='noopener' target='_blank') https://kidshealth.org/
+                    a(href='https://www.cdc.gov/' rel='noopener' target='_blank') https://www.cdc.gov/
+                    //- a(href='CDC Nutrion Informaon' target='_blank') CDC Nutrion Informaon
+                    a(href='https://www.cdc.gov/nutrition/index.html' rel='noopener' target='_blank') https://www.cdc.gov/nutrition/index.html
+                    a(href='https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/default.aspx' rel='noopener' target='_blank') https://www.healthychildren.org/English/tips-tools/symptom-checker/Pages/default.aspx
+    .section.section--3
+        .container
+            .section_wrapper
+                h2.section_title After Hours
+                p.section_description.centered We have a pediatrician on call 24/7/365 days a year for urgent health issues. Call 424-277-2020 and follow the prompts.
+                p.section_description.centered If your child needs to be seen after hours, the doctor on call will direct you to either a local Urgent Care or Emergency Room.
+                h2.section_title Local Emergency Rooms
+            .section_wrapper
+                .section_details
+                    ul.section_details--list
+                        p.bold UCLA Health - Santa Monica Medical Center
+                        li  Emergency Department
+                        li  1250 16th Street
+                        li  Santa Monica, CA 90404
+                        li  Hospital Information: 424-259-6000
+                        li  Emergency Department: 424-259-8400
+                        <br>
+                    ul.section_details--list
+                        p.bold Ronald Reagan UCLA Medical Center
+                        li  Emergency Department
+                        li  757 Westwood Plaza
+                        li  Los Angeles, CA 90095
+                        li  Hospital Information: 310-825-9111
+                        li  Emergency Department: 310-825-2111
+                .section_details
+                    ul.section_details--list
+                        p.bold Providence Saint John's Health Center
+                        li  Santa Monica Blvd 1st Floor,
+                        li  2121 Santa Monica Blvd 1st Floor,
+                        li  Santa Monica, CA 90404
+                        li  (310) 829-5511
+    .section.section--4
+        .container
+            .section_wrapper
+                h2.section_title Local Urgent Cares
+            .section_wrapper
+                .section_details
+                    ul.section_details--list
+                        p.bold Playa Vista - Cedar Sinai - Urgent Care
+                        li  12746 W Jefferson Blvd. 2nd Floor
+                        li  Playa Vista, CA 90094
+                        li  424-315-2220
+                        <br>
+                    ul.section_details--list
+                        p.bold PM Pediatrics Urgent Care
+                        li  8731 W. Pico Blvd, Los Angeles, CA 90035
+                        li  310-312-5437
+                .section_details
+                    ul.section_details--list
+                        p.bold Beverly Hills – Cedar Sinai - Urgent Care
+                        li  8501 Wilshire Blvd. #150
+                        li  Los Angeles, CA 90048
+                    
+                    
+                

@@ -1,0 +1,150 @@
+doctype html
+html(lang="en" class=pageClass)
+    head
+        meta(charset="UTF-8")
+        title= title
+        block meta
+        link(rel="stylesheet" type='text/css' href="/css/main.css")
+        link(rel="stylesheet" type='text/css' href="/css/responsiveslides.css")
+        link(rel='icon' href='/imgs/icons/favicon.png' type='image/gif')
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+        meta(name="description" content="Express-PUG Boilerplate")
+        meta(property="og:title" content="California Kids Pediatrics")
+        meta(property="og:site_name" content="California Kids Pediatrics")
+        meta(property="og:description" content="California Kids Pediatrics is a private practice with a mission to provide thorough and thoughtful medical care in the most comfortable of environments. We are here for you and your kids!")
+        meta(property="og:image" content="/images/logo.png")
+        meta(property="og:url" content="/images/logo.png")
+
+        meta(property="twitter:title" content="California Kids Pediatrics")
+        meta(property="twitter:description" content="California Kids Pediatrics")
+        meta(property="twitter:image" content="/images/logo.png")
+        meta(property="twitter:card" content="summary_large_image")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+        //- script(src="https://ajax.googleapis.com/ajax/libs/jquery/1155.2.1/jquery.min.js")
+        script(src="/js/recaptcha_callback.js")
+        script(src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer)
+
+        
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-TPSQ8RMNVQ')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TPSQ8RMNVQ');
+
+    body
+        block header
+            include includes/modal
+            header.header
+                nav.container.nav
+                    .header_wrapper
+                        a(href='/').nav_logo_link
+                            img.nav_logo(src="/imgs/icons/ckp-logo-main.png", alt="California Kids Pediatrics")
+                        .nav_toggle(id="menuToggle")                   
+                            input(type="checkbox" aria-label="checkbox")
+                            label(for="checkbox")
+                            a(href="...").nav_burger
+                                span
+                                span
+                                span
+                            .nav_menu(class= activePageId)
+                                a.nav_menu--item(href='/' class= menu_home) Home
+                                a.nav_menu--item(href='/services' class= menu_services) Services
+                                a.nav_menu--item(href='/meet-our-team' class= menu_meet_our_team) Meet Our Team
+                                a.nav_menu--item(href='/resources' class= menu_resources) Resources
+                                //-a.nav_menu--item(href='/contact-us' class= menu_contact_us) Contact Us
+                                a.nav_menu--item(href='/location' class= menu_location) Locations
+                                //- a.nav_menu--item(href='https://blogs.calkidspeds.com/' class= menu_blog) Blog 
+                                //- a(href="https://www.zocdoc.com/practice/california-kids-pediatrics-65472").btn.bookonline  BOOK ONLINE
+ 
+            a#pop_up_btn(href='tel:424-277-2020')
+                img#sticky(src='/imgs/icons/Doctor_On_Call1.png' alt='Doctor on Call') 
+
+
+
+            //- a(href="#")
+            //-     img.sticky-scroll(src='/imgs/icons/Return_Up_Button.png' alt='Doctor on Call') 
+                        
+
+        main.main_content
+            block content
+
+        block footer
+            footer.footer
+                .container
+                    .footer_wrapper
+                        .footer_sched
+                            ul Hours of Operation
+                                li
+                                    span Monday 
+                                    span :
+                                    | 9:00AM - 5:00PM
+                                li 
+                                    span Tuesday
+                                    span :
+                                    | 9:00AM - 5:00PM
+                                li 
+                                    span Wednesday
+                                    span :
+                                    | 9:00AM - 5:00PM
+                                li 
+                                    span Thursday
+                                    span :
+                                    | 9:00AM - 5:00PM
+                                li 
+                                    span Friday
+                                    span :
+                                    | 9:00AM - 5:00PM
+                                li A doctor is on-call 24/7/365 days a year.
+                            a(href='/')
+                                img.footer_logo(src="/imgs/icons/ckp-logo.png", alt="California Kids Pediatrics")
+                        .footer_contact 
+                            ul California Kids Pediatrics - West LA
+                                li.ftr_list_img 2990 S. Sepulveda Blvd., Suite 202 
+                                    .block Los Angeles, CA 90064
+                                li T. 
+                                    a.footer-link(href='tel:424-277-2020') 424-277-2020
+                                    span  | F. 
+                                    a.footer-link(href='tel:310-388-1104') 310-388-1104
+                                li 
+                                    a.link-cdca(href='mailto:Contact@CalKidsPeds.com') Contact@CalKidsPeds.com
+                            .footer_social
+                                a(href='https://www.facebook.com/CaliforniaKidsPediatrics' rel='noopener' target='_blank')
+                                    img.social_media(src="/imgs/icons/facebook-icon.svg" alt="Facebook")
+                                a(href='' rel='noopener' target='_blank')
+                                    img.social_media(src="/imgs/icons/instagram-icon.svg" alt="Instagram")
+                        .footer_contact-1
+                            ul California Kids Pediatrics - South Bay
+                                li.ftr_list_img 23530 Hawthorne Blvd. STE 260, 
+                                    .block Torrance, CA 90505
+                                li T. 
+                                    a.footer-link(href='tel:424-322-9866') 424-322-9866
+                                    span  | F. 
+                                    a.footer-link(href='tel:424-866-8764') 424-866-8764
+                                li 
+                                    a.link-cdca(href='mailto:Contact@CalKidsPeds.com') Contact@CalKidsPeds.com
+                        div.footer-logo-social
+                            a.mr(href='/')
+                                img(src="/imgs/icons/ckp-logo.png", alt="California Kids Pediatrics")
+                            div
+                                a(href='https://www.facebook.com/CaliforniaKidsPediatrics' rel='noopener' target='_blank')
+                                    img.social_media(src="/imgs/icons/facebook-icon.svg" alt="Facebook")
+                                a(href='' rel='noopener' target='_blank')
+                                    img.social_media(src="/imgs/icons/instagram-icon.svg" alt="Instagram")
+                            
+                        //- .footer_map
+                        //-     //- img.footer_map(src="/imgs/footer_map.png", alt="California Kids Pediatrics Map")
+                        //-     <iframe title="Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.625639889142!2d-118.4307679853071!3d34.027819080612616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbae1ac1f6bf%3A0xfdf036a12f8a4832!2sCalifornia%20Kids%20Pediatrics%20-%20Dr.%20Leila%20Bozorgnia!5e0!3m2!1sen!2sph!4v1609277430869!5m2!1sen!2sph"></iframe>
+            script(src="/js/autoplay.js")
+            script(src="/js/tools.js")
+            script(src="/js/modalpopup.js")
+            script(src="/js/responsiveslides.min.js")
+            script(src="/js/slider.js")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js")
+            script(src="/js/validator.js")

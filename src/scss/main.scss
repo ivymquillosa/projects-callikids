@@ -1,0 +1,28 @@
+:root {
+  font-size: 16px;
+}
+
+// @import "fonts/lato/lato.css";
+
+// UTILS
+@import "utils/index";
+
+// COMMON
+@import "common/header";
+@import "common/layout";
+@import "common/hexa";
+@import "common/header";
+@import "common/hexa";
+@import "common/footer";
+@import "pages/homepage";
+
+// PAGE
+@import "pages/homepage";
+@import "pages/services";
+@import "pages/meetTheTeam";
+@import "pages/resources";
+@import "pages/contactUs";
+@import "pages/pagesFrames";
+@import "pages/404";
+@import "pages/modal";
+@import "pages/location";

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="43" viewBox="0 0 217 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="8" height="14.548" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_807" data-name="Group 807" transform="translate(-796 -4233)">
+    <g id="Group_644" data-name="Group 644" transform="translate(420 26)">
+      <circle id="Ellipse_89" data-name="Ellipse 89" cx="21.5" cy="21.5" r="21.5" transform="translate(376 4207)" fill="#7accc8"/>
+      <g id="Facebook" transform="translate(118 3839.11)">
+        <g id="Group_2" data-name="Group 2" transform="translate(276 382.89)">
+          <g id="Group_1" data-name="Group 1" clip-path="url(#clip-path)">
+            <path id="Path_1" data-name="Path 1" d="M284.146,382.795l-1.866,0a3.276,3.276,0,0,0-3.45,3.541v1.633h-1.876a.293.293,0,0,0-.294.293v2.366a.294.294,0,0,0,.294.293h1.876v5.969a.293.293,0,0,0,.293.293h2.448a.293.293,0,0,0,.293-.293v-5.969h2.193a.294.294,0,0,0,.294-.293v-2.366a.293.293,0,0,0-.294-.293h-2.194v-1.384c0-.665.158-1,1.025-1h1.256a.294.294,0,0,0,.294-.293v-2.2a.294.294,0,0,0-.293-.294Zm0,0" transform="translate(-276.537 -382.81)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_645" data-name="Group 645" transform="translate(422 26)">
+      <circle id="Ellipse_90" data-name="Ellipse 90" cx="21.5" cy="21.5" r="21.5" transform="translate(432 4207)" fill="#7accc8"/>
+      <g id="Twitter" transform="translate(395 4000.11)">
+        <path id="Path_1-2" data-name="Path 1" d="M66,224.236a5.739,5.739,0,0,1-1.649.452,2.884,2.884,0,0,0,1.262-1.588,5.793,5.793,0,0,1-1.825.7,2.874,2.874,0,0,0-4.894,2.618,8.154,8.154,0,0,1-5.919-3,2.875,2.875,0,0,0,.889,3.833,2.872,2.872,0,0,1-1.3-.36v.036a2.875,2.875,0,0,0,2.3,2.816,2.907,2.907,0,0,1-.757.1,2.751,2.751,0,0,1-.541-.053,2.874,2.874,0,0,0,2.682,1.995,5.762,5.762,0,0,1-3.567,1.227A6.1,6.1,0,0,1,52,232.97a8.165,8.165,0,0,0,12.573-6.879l-.01-.372A5.737,5.737,0,0,0,66,224.236Zm0,0" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_646" data-name="Group 646" transform="translate(421 26)">
+      <circle id="Ellipse_91" data-name="Ellipse 91" cx="21.5" cy="21.5" r="21.5" transform="translate(491 4207)" fill="#7accc8"/>
+      <g id="Google_" data-name="Google+" transform="translate(412 3929.11)">
+        <path id="Path_1-3" data-name="Path 1" d="M377.814,347.9v-2.808h-1.4V347.9H373.6v1.4h2.808v2.808h1.4V349.3h2.809v-1.4Zm0,0" transform="translate(-266.423 -48.458)" fill="#fff"/>
+        <path id="Path_2" data-name="Path 2" d="M99.021,299.44v2.775h3.972a4.193,4.193,0,1,1-1.244-4.545l1.845-2.092a6.912,6.912,0,1,0,2.447,5.25V299.44Zm0,0" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_647" data-name="Group 647" transform="translate(414 26)">
+      <circle id="Ellipse_92" data-name="Ellipse 92" cx="21.5" cy="21.5" r="21.5" transform="translate(556 4207)" fill="#7accc8"/>
+      <g id="Youtube" transform="translate(397 3889.11)">
+        <path id="Path_1-4" data-name="Path 1" d="M188.376,334.857c-.577-.686-1.644-.967-3.68-.967H177.3c-2.083,0-3.167.3-3.743,1.029-.561.713-.561,1.763-.561,3.216v2.77c0,2.815.666,4.245,4.3,4.245H184.7c1.766,0,2.745-.247,3.378-.853.649-.621.926-1.636.926-3.392v-2.77c0-1.533-.043-2.589-.624-3.278Zm-5.1,5.046-3.357,1.754a.516.516,0,0,1-.755-.457v-3.5a.516.516,0,0,1,.754-.458l3.357,1.743a.516.516,0,0,1,0,.916Zm0,0" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

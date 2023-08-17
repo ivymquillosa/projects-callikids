@@ -1,0 +1,48 @@
+extends ../layout
+
+block content
+    .section.section--1
+        .container
+            .section_wrapper.contact
+                .contact-form
+                    h2.section_title Contact Us
+                    h3.section_subtitle Do you have any questions or would you like to schedule an appointment?
+                        |  Submit this form and we will reach out to you by the end of the next business day.
+                        | Please do not submit any Protected Health Information (PHI).
+                    .contact-fields
+                        form#contact_form(method='post' action='/contact-us' venctype='text/plain') 
+                            input(name= 'first_name', type= 'text', placeholder= 'First Name *', value= '' required)
+                            input(name= 'last_name', type= 'text', placeholder= 'Last Name *', value= '' required)
+                            input(name= 'email_address', type= 'email', placeholder= 'Email Address *', value= '' required)
+                            input(name= 'phone_number', id= 'phone_number', type= 'text', placeholder= 'Phone Number *', value= '' minlength='14', maxlength='14', required)
+                            h3.section_details--title Purpose of Appointment:
+                            //- .select_opt
+                            //-     select(name='purpose', id='purpose')
+                            //-         option(value= 'Well Child Visit') Well Child Visit
+                            //-         option(value= 'Same-Day Sick Visits') Same-Day Sick Visits
+                            //-         option(value= 'Sports Physical Evaluations') Sports Physical Evaluations
+                            //-         option(value= 'Laboratory Test') Laboratory Test
+                            //-         option(value= 'ADHD Evaluation') ADHD Evaluation
+                            //-         option(value= 'Frenotomies') Frenotomies
+                            //-         option(value= 'Wart Removal') Wart Removal
+                            //-         option(value= 'Ear Piercing') Ear Piercing
+                            //-         option(value= 'Urine Catheterization') Urine Catheterization
+                            //-         option(value= 'COVID-19 Test') COVID-19 Test
+                            //-         option(value= 'Vaccination') Vaccination
+                            //- h3.section_details--title 
+                            input(name= 'purpose', type= 'text', placeholder= '', value= '')
+                            h3.section_details--title Message
+                            textarea(resize= 'none', name='message')
+                            div#rcaptcha.g-recaptcha.brochure__form__captcha(data-sitekey='6LccMbAcAAAAAJvbd0rq19wNEt4CmCkXtXzKoAyn', data-callback="contactSubmit")
+                            .captcha_err Error verifying reCAPTCHA, please try again.
+                            span#captcha(style='color: red')
+                            //- input(type='submit' value='SUBMIT')
+                            //- button.btn.g-recaptcha(data-sitekey='6LcfSlQaAAAAAFE5nfZh0jn_DqPWEb8FO_6hXYKp', data-callback="contactSubmit") SUBMIT
+                            button.btn.btn-default.g-recaptcha Submit
+                    .contact-info
+                        .info
+                            img(src='/imgs/contact_us/phone-call.png', alt='')
+                            a.footer-link(href='tel:424-277-2020') 424-277-2020
+                        .info
+                            img(src='/imgs/contact_us/email.png', alt='')
+                            a(href='mailto:Contact@CalKidsPeds.com') Contact@CalKidsPeds.com
